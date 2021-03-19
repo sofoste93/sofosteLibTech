@@ -49,7 +49,8 @@
         <p class="card-text text-muted font-weight-bolder">
             PHP version used: <em><?php $version = phpversion(); echo $version?></em><br>
             Languages: <em>PHP, HTML, CSS.</em><br>
-            Useful doc: <em><a href="https://www.php.net/manual/en/">php documentation</a></em>
+            Useful doc: <em><a href="https://www.php.net/manual/en/">php documentation</a></em><br>
+            Readme: <em><a href="README.md" target="_blank">find out more</a></em>
         </p>
     </div>
     <!--content-->
