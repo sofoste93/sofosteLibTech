@@ -11,7 +11,7 @@ Getting started with PHP - ? Check this out and get inspired ;-)
 
 > Description
  
-This project 
+This project is a website
 
 A web app principally written in php.
 
