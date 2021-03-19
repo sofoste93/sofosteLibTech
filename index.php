@@ -29,7 +29,7 @@
         <p><a class="btn btn-outline-success"
               href="#">This Lib contains all the books you need..</a></p>
         <div class="d-flex position-relative">
-            <img src="lib.jpg" class="flex-shrink-0 me-3" alt="library" id="lib-img">
+            <img src="../../lib.jpg" class="flex-shrink-0 me-3" alt="library" id="lib-img">
             <div class="m-3">
                 <h5 class="mt-0">A short presentation</h5>
                 <p class="card-text">This is the beginning of a big project. We want to,
