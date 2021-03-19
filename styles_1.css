@@ -1,0 +1,27 @@
+/**
+setting up
+Style
+@sofoste
+ */
+
+body {
+    font-family: monospace;
+    background-attachment: fixed;
+    background-color: blue;
+}
+#header {
+    /*background-color: black;*/
+    background: linear-gradient(59deg, #3A6073, #16222A);
+}
+#lib-img {
+    width: 190px;
+    height: 210px;
+    border: solid black 10px;
+    border-radius: 0 50px 50px 0;
+    box-shadow: darkgray 10px 5px 10px 5px;
+}
+
+#footer {
+    /*background-color: black;*/
+    background: linear-gradient(59deg, #3A6073, #16222A);
+}
