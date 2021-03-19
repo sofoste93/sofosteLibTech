@@ -15,9 +15,11 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body class="bg-light">
-<div class="card card-header text-center text-monospace text-success text-uppercase fixed-top" id="header">
+<div class="card card-header text-center text-monospace text-success text-uppercase fixed-top font-weight-bolder"
+     id="header">
     {- sofoste - Ensuring a better future for our city - Mangwa -}
 </div>
+<?php include 'navbar.html'?>
 <div class="jumbotron jumbotron-fluid m-3 text-monospace">
     <div class="container">
         <h1 class="display-3">Welcome to So<sub class="text-info">b&gt;</sub>foste virtual Library</h1>
@@ -47,19 +49,19 @@
         </div>
         <hr class="my-2 bg-danger">
         <p class="card-text text-muted font-weight-bolder">
-            PHP version used: <em><?php $version = phpversion(); echo $version?></em><br>
-            Languages: <em>PHP, HTML, CSS.</em><br>
-            Useful doc: <em><a href="https://www.php.net/manual/en/">php documentation</a></em><br>
-            Readme: <em><a href="README.md" target="_blank">find out more</a></em>
+            &#9956; PHP version used: <em><?php $version = phpversion(); echo $version?></em><br>
+            &#9956; Languages: <em>PHP, HTML, CSS.</em><br>
+            &#9956; Useful doc: <em><a href="https://www.php.net/manual/en/">php documentation</a></em><br>
+            &#9956; Readme: <em><a href="README.md" target="_blank">find out more</a></em>
         </p>
     </div>
     <!--content-->
 
     <!--footer-->
     <div class="card-footer text-center text-warning fixed-bottom" id="footer">
-        &copy; sofoste 2021 | php developer | contact:
+        &#9956; &copy; sofoste 2021 | php developer | contact:
         <a href="mailto:sobsteph41@yahoo.com" class="stretched-link text-success">
-        Steph Fouodji
+            Steph Fouodji <steph class="text-warning">&#9956;</steph>
     </a>
     </div>
 </div>
