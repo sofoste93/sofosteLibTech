@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
+    <!--my JS -->
+    <script src="myJS.js"></script>
 
 </head>
 <body>
@@ -31,10 +33,10 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" onclick="alert('Unavailable!');">Mangwa</a>
+                    <a class="nav-link disabled" href="#" onclick="errMsg();">Mangwa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="alert('working on..');"
+                    <a class="nav-link" href="#" onclick="workingOn();"
                        xlink:title="working on..">Abakwa</a>
                 </li>
                 <li class="nav-item">
@@ -49,7 +51,7 @@
                 <form class="d-flex navbar-nav ml-auto">
                     <input class="form-control m-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success m-2" type="submit"
-                            onclick="alert('unavailable!');">Search</button>
+                            onclick="workingOn();">Search</button>
                 </form>
             </div>
         </div>
