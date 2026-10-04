@@ -4,7 +4,7 @@
 
 Sofoste LibTech is a small, curated library of trustworthy learning resources. It began in 2021 as an educational PHP experiment for Mangwa and Abakwa. Version 2 keeps that purpose and rebuilds the project as a responsive, accessible web application that is pleasant to use and simple to study.
 
-[Open the live library](https://sofoste93.github.io/sofosteLibTech/) · [Download the latest release](https://github.com/sofoste93/sofosteLibTech/releases/latest)
+[Download the latest release](https://github.com/sofoste93/sofosteLibTech/releases/latest)
 
 ![Sofoste LibTech dark interface](docs/screenshots/sofoste-libtech-v2.png)
 
