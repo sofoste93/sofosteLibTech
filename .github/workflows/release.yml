@@ -19,7 +19,7 @@ jobs:
       - run: php tools/build-static.php
       - name: Create packages
         run: |
-          tar -czf sofoste-libtech-${{ github.ref_name }}-source.tar.gz --exclude=.git --exclude=dist .
+          git archive --format=tar.gz --output=sofoste-libtech-${{ github.ref_name }}-source.tar.gz HEAD
           cd dist && zip -r ../sofoste-libtech-${{ github.ref_name }}-static.zip .
           cd .. && sha256sum sofoste-libtech-* > SHA256SUMS.txt
       - uses: softprops/action-gh-release@v2
