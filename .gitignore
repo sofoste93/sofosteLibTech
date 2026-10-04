@@ -1,0 +1,12 @@
+/dist/
+/build/
+/.phpunit.cache/
+/.idea/
+/.vscode/
+/.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+

@@ -1,0 +1,11 @@
+{
+  "name": "Sofoste LibTech",
+  "short_name": "LibTech",
+  "description": "A curated, community-rooted library of trusted learning resources.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f1e8",
+  "theme_color": "#174f3a",
+  "icons": [{"src": "assets/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
+}
+

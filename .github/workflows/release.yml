@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    tags: ['v2.*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+      - run: php tests/run.php
+      - run: php tools/build-static.php
+      - name: Create packages
+        run: |
+          tar -czf sofoste-libtech-${{ github.ref_name }}-source.tar.gz --exclude=.git --exclude=dist .
+          cd dist && zip -r ../sofoste-libtech-${{ github.ref_name }}-static.zip .
+          cd .. && sha256sum sofoste-libtech-* > SHA256SUMS.txt
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: Sofoste LibTech 2.0.0 — Open Knowledge
+          body: |
+            A professional restoration of the original educational library.
+
+            - Responsive Serpent Pro interface for desktop and mobile
+            - Real search, categories and device-local bookmarks
+            - English and French interface, light/dark themes, help and reduced motion
+            - Installable web app with offline shell after the first visit
+            - PHP source package and server-free static package
+
+            The source edition requires PHP 8.1+. The static edition can be extracted and opened directly.
+          files: |
+            sofoste-libtech-${{ github.ref_name }}-source.tar.gz
+            sofoste-libtech-${{ github.ref_name }}-static.zip
+            SHA256SUMS.txt
+

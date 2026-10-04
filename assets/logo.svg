@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sofoste LibTech">
+  <rect width="64" height="64" rx="18" fill="#174f3a"/>
+  <path d="M17 39c6-2 11-1 15 3 4-4 9-5 15-3v10c-6-1-11 0-15 4-4-4-9-5-15-4V39Z" fill="#f5f0df"/>
+  <path d="M32 42v11" stroke="#d3b86a" stroke-width="2"/>
+  <path d="M32 40c0-9 3-14 10-19 4-3 6-7 5-11M32 39c0-7-3-12-10-15-4-2-6-5-7-9" fill="none" stroke="#a9cc8d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M42 21c5-7 11-8 16-5-3 7-8 9-16 5ZM22 24c-7 0-11-4-12-10 7-1 12 2 12 10Z" fill="#a9cc8d"/>
+</svg>
+

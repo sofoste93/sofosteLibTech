@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['8.1', '8.2', '8.3', '8.4']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+      - name: Lint PHP
+        run: find . -name '*.php' -not -path './dist/*' -print0 | xargs -0 -n1 php -l
+      - name: Run catalogue checks
+        run: php tests/run.php
+      - name: Build static edition
+        run: php tools/build-static.php
+      - name: Check static output
+        run: test -s dist/index.html && test -s dist/assets/app.js && test -s dist/assets/styles.css
+
